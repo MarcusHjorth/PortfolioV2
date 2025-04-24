@@ -21,7 +21,7 @@ const Header = () => {
 
 
     return ( 
-        <header>
+        <header className='fixed w-full'>
             <ul className='flex flex-row items-center p-4 justify-end gap-4'> 
                 
                 <li className='cursor-pointer'>Contact me</li>
