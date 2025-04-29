@@ -24,7 +24,7 @@ const Header = () => {
         <header className='fixed w-full'>
             <ul className='flex flex-row items-center p-4 justify-end gap-4'> 
                 
-                <li className='cursor-pointer'>Contact me</li>
+                {/* <li className='cursor-pointer'>Contact me</li> */}
                 <li className="bg-gradient-to-tr from-[#212121] to-[#4a4a4a] rounded-2xl p-4 px-8 font-bold">
                     {time}
                 </li>
