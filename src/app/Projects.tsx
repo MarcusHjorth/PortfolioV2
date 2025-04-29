@@ -6,8 +6,6 @@ import { collection, getDocs } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import Image from 'next/image';
 
-import ProjectComp from "./ProjectComp";
-
 
 const Projects = () => {
     const [ projects, setProjects ] = useState([])

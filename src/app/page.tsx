@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import Galery from './Galery';
 import Projects from './Projects';
 import Header from './Header';
 import TechnicalSkills from './TechnicalSkills';
