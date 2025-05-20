@@ -18,21 +18,22 @@ interface Project {
 
 const Projects = () => {
     const [projects, setProjects] = useState<Project[]>([])
-    const projectCollectionRef = collection(db, "Projects")
-
+    
     useEffect(() => {
+        const projectCollectionRef = collection(db, "Projects")
+
         const getProjects = async () => {
             const data = await getDocs(projectCollectionRef)
             setProjects(data.docs.map((doc) => ({ ...doc.data(), id: doc.id})))
         }
         getProjects()
-    }, [ ])
+    }, [  ])
 
     return ( 
         <section className="justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
             <div className="w-full h-[10rem]">
 
-                {projects.map((project, i) => {
+                {projects.map((project) => {
                 return (
                     <div key={project.id} className="bg-[#222222] shadow-md w-full rounded-lg p-6 mb-6 flex md:flex-row flex-col md:justify-between">
                         <div className='flex justify-between flex-col md:w-[50%]'>

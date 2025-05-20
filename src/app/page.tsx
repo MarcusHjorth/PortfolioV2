@@ -4,13 +4,6 @@ import TechnicalSkills from './TechnicalSkills';
 
 
 export default function Home() {
-
-  interface ProjectsProps {
-
-    id?: string;
-  
-  }
-
   return (
     <div className='font-[family-name:var(--font-geist-sans)]'>
     <Header />
