@@ -7,8 +7,17 @@ import { useState, useEffect } from "react";
 import Image from 'next/image';
 
 
+interface Project {
+    id: string;
+    title?: string;
+    description?: string;
+    github?: string;
+    coverImage?: string;
+}
+
+
 const Projects = () => {
-    const [ projects, setProjects ] = useState([])
+    const [projects, setProjects] = useState<Project[]>([])
     const projectCollectionRef = collection(db, "Projects")
 
     useEffect(() => {
