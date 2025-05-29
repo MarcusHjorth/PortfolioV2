@@ -20,8 +20,8 @@ const Header = () => {
 
 
     return ( 
-        <header className='fixed w-full'>
-            <ul className='flex flex-row items-center p-4 justify-end gap-4'> 
+        <header className='fixed w-full bg-[#121d22]'>
+            <ul className='flex flex-row items-center p-2 justify-end gap-4'> 
                 
                 {/* <li className='cursor-pointer'>Contact me</li> */}
                 <li className="bg-gradient-to-tr from-[#212121] to-[#4a4a4a] rounded-2xl p-4 px-8 font-bold">
