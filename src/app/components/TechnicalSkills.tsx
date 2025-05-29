@@ -4,8 +4,8 @@ const TechnicalSkills = () => {
     
     
     return ( 
-        <section className="my-16 flex flex-col md:max-h-60">
-            <h1 className="text-2xl my-4" id='skills'>Skills</h1>
+        <section className="my-16 flex flex-col">
+            <h1 className="text-2xl my-4" id='skills'>Technical Skills</h1>
             
             <div className="flex flex-wrap justify-center max-w-[40rem] m-auto">
                 {skills.map((skill, index) => (

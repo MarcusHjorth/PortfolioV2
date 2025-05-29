@@ -30,12 +30,15 @@ const Projects = () => {
     }, [  ])
 
     return ( 
-        <section className="justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
-            <div className="w-full h-[10rem]">
-
-                {projects.map((project) => {
+        <section className="justify-items-center font-[family-name:var(--font-geist-sans)]">
+            <div className="w-full">
+                {projects.map((project, i) => {
                 return (
-                    <div key={project.id} className="bg-[#222222] shadow-md w-full rounded-lg p-6 mb-6 flex md:flex-row flex-col md:justify-between">
+                    <div 
+                        key={project.id} 
+                        className={`bg-[#222222] text-white shadow-md w-full rounded-lg p-6 mb-6 gap-4 flex md:flex-row flex-col  ${
+                        i % 2 === 0 ? 'md:flex-row-reverse' : ''} md:justify-between`}>
+                        
                         <div className='flex justify-between flex-col md:w-[50%]'>
                             <h2 className="text-2xl font-bold mb-4">{project.title}</h2>
                             <p className="mb-4 overflow-clip overflow-ellipsis max-h-[70%] overflow-y-scroll">{project.description}</p>
@@ -57,7 +60,7 @@ const Projects = () => {
                         </div>
                     </div>
                 )
-               })} 
+                })} 
             </div>
         </section>
      );
